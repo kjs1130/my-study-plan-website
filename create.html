@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Study Plan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">My Study Plan</div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="create.html" class="active"><i class="fas fa-plus-circle"></i> Create Plan</a>
+            <a href="plans.html"><i class="fas fa-tasks"></i> My Plans</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="create-plan">
+            <h1>Create Study Plan</h1>
+            <form id="studyPlanForm">
+                <div class="form-group">
+                    <label for="planTitle">Subject</label>
+                    <input type="text" id="planTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="planDescription">Goal</label>
+                    <textarea id="planDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Date</label>
+                    <input type="date" id="startDate" required placeholder="Select date">
+                </div>
+                <button type="submit" class="btn primary"><i class="fas fa-plus-circle"></i> Create Plan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Study Plan. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/create.js"></script>
+</body>
+</html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Plan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">My Study Plan</div>
+        <div class="nav-links">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="create.html"><i class="fas fa-plus-circle"></i> Create Plan</a>
+            <a href="plans.html"><i class="fas fa-tasks"></i> My Plans</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>My Study Plan</h1>
+            <div class="quote-container">
+                <p class="quote" id="quote"></p>
+                <p class="quote-author" id="quoteAuthor"></p>
+            </div>
+            <div class="cta-buttons">
+                <a href="create.html" class="btn primary"><i class="fas fa-pencil-alt"></i> Create Plan</a>
+                <a href="plans.html" class="btn secondary"><i class="fas fa-list-alt"></i> View Progress</a>
+            </div>
+        </section>
+
+        <section class="d-day-section">
+            <h2>Set D-Day</h2>
+            <div class="d-day-container">
+                <div class="d-day-input">
+                    <input type="text" id="dDayTitle" placeholder="Enter your goal (e.g., Final Exam)">
+                    <input type="date" id="dDayDate">
+                    <button id="setDDay" class="btn primary"><i class="fas fa-calendar-alt"></i> Set</button>
+                    <button id="cancelDDay" class="btn secondary" style="display: none;"><i class="fas fa-times-circle"></i> Cancel</button>
+                </div>
+                <div class="d-day-display" id="dDayDisplay">
+                    <h3 id="dDayTitleDisplay"></h3>
+                    <p id="dDayCount"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2>Study Progress</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+            </div>
+            <p class="progress-text">Overall Completion: <span id="progressPercentage">0</span>%</p>
+        </section>
+
+        <section class="white-noise">
+            <h2>Focus Sounds</h2>
+            <div class="noise-container">
+                <div class="noise-item">
+                    <h3>Rain Sounds</h3>
+                    <div class="youtube-player" id="player4"></div>
+                    <button class="btn noise-btn" data-player="player4" data-video="mPZkdNFkNps">Play</button>
+                </div>
+                <div class="noise-item">
+                    <h3>Fireplace Sounds</h3>
+                    <div class="youtube-player" id="player5"></div>
+                    <button class="btn noise-btn" data-player="player5" data-video="L_LUpnjgPso">Play</button>
+                </div>
+                <div class="noise-item">
+                    <h3>Mountain Birds</h3>
+                    <div class="youtube-player" id="player6"></div>
+                    <button class="btn noise-btn" data-player="player6" data-video="q76bMs-NwRk">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="youtube-music">
+            <h2>Cafe Music</h2>
+            <div class="music-container">
+                <div class="music-item">
+                    <h3>Lo-fi Cafe Music</h3>
+                    <div class="youtube-player" id="player1"></div>
+                    <button class="btn music-btn" data-player="player1" data-video="jfKfPfyJRdk">Play</button>
+                </div>
+                <div class="music-item">
+                    <h3>Classical Cafe Music</h3>
+                    <div class="youtube-player" id="player2"></div>
+                    <button class="btn music-btn" data-player="player2" data-video="7gphiFVVtUI">Play</button>
+                </div>
+                <div class="music-item">
+                    <h3>Jazz Cafe Music</h3>
+                    <div class="youtube-player" id="player3"></div>
+                    <button class="btn music-btn" data-player="player3" data-video="Dx5qFachd3A">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stopwatch">
+            <h2>Study Time Tracker</h2>
+            <div class="timer-display" id="timerDisplay">00:00:00</div>
+            <div class="timer-controls">
+                <button id="startTimer" class="btn"><i class="fas fa-play"></i> Start</button>
+                <button id="stopTimer" class="btn"><i class="fas fa-pause"></i> Stop</button>
+                <button id="resetTimer" class="btn"><i class="fas fa-redo"></i> Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Study Plan. All rights reserved.</p>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/stopwatch.js"></script>
+    <script src="assets/js/quotes.js"></script>
+    <script src="assets/js/dday.js"></script>
+    <script src="assets/js/whitenoise.js"></script>
+    <script src="assets/js/youtube.js"></script>
+</body>
+</html> 

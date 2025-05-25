@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plans - My Study Plan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">My Study Plan</div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="create.html"><i class="fas fa-plus-circle"></i> Create Plan</a>
+            <a href="plans.html" class="active"><i class="fas fa-tasks"></i> My Plans</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="plans-section">
+            <h1>My Study Plans</h1>
+            
+            <div class="overall-progress">
+                <h2><i class="fas fa-chart-line"></i> Overall Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress" id="overallProgress"></div>
+                </div>
+                <p>Completion: <span id="overallPercentage">0</span>%</p>
+            </div>
+
+            <div class="progress-graph">
+                <h2><i class="fas fa-chart-bar"></i> Study Progress Graph</h2>
+                <canvas id="progressChart"></canvas>
+            </div>
+
+            <div class="plans-filter">
+                <button class="btn" data-filter="all"><i class="fas fa-list"></i> All</button>
+                <button class="btn" data-filter="active"><i class="fas fa-play-circle"></i> Active</button>
+                <button class="btn" data-filter="completed"><i class="fas fa-check-circle"></i> Completed</button>
+            </div>
+
+            <div class="plans-container" id="plansContainer">
+                <!-- Plans will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Study Plan. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/plans.js"></script>
+</body>
+</html> 
